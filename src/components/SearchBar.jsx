@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { bookStore } from "../state/bookStore";
 
 export const SearchBar = () => {
-  const { setSearchBook } = bookStore();
+  const { setSearchBook, searchBook } = bookStore();
   const [searchValue, setSearchValue] = useState("");
 
+  useEffect(() => {
+    setSearchValue(searchBook);
+  }, [searchBook]);
+
   const handleSearch = (event) => {
-    setSearchValue(event.target.value);
-    setSearchBook(event.target.value);
+    const value = event.target.value;
+    setSearchValue(value);
+    setSearchBook(value);
   };
 
   return (
