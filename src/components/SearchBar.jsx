@@ -17,7 +17,7 @@ export const SearchBar = () => {
 
   return (
     <div>
-      <p>Search By Name</p>
+      <p className="text-base">Search By Name</p>
       <input
         type="text"
         placeholder="e.g. Clean Code"

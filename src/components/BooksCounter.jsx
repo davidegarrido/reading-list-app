@@ -5,10 +5,10 @@ export const BooksCounter = () => {
 
   return (
     <section className="flex m-5 ml-10 gap gap-2">
-      <span className="badge badge-primary text-xl p-5">
+      <span className="badge badge-primary text-base p-5">
         Books available:{booksNotOnList}
       </span>
-      <span className="badge badge-secondary text-xl p-5">
+      <span className="badge badge-secondary text-base p-5">
         Books on list:{booksOnList}
       </span>
     </section>

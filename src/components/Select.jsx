@@ -37,7 +37,7 @@ export const Select = () => {
 
   return (
     <div className="">
-      <p>Filter by Genre</p>
+      <p className="text-base">Filter by Genre</p>
       <select
         value={selectedGenre}
         className="select w-full max-w-xs border border-neutral"
