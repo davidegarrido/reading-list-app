@@ -22,7 +22,7 @@ export const Books = () => {
     <div className="flex flex-col m-10 gap gap-5">
       <Filters />
 
-      <div className="grid gap-5 grid-cols-1 xl:grid-cols-4">
+      <div className="mb-10 grid gap-5 grid-cols-1 xl:grid-cols-4">
         {filteredBooks.map(({ book }) => (
           <Card
             key={book.ISBN}
