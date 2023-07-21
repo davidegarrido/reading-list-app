@@ -1,8 +1,5 @@
 import { Card } from "./Card";
 export const BookList = ({ books, readingList }) => {
-  // const isBookInReadingList = (ISBN) => {
-  //   return readingList.some((b) => b.book.ISBN === ISBN);
-  // };
   const readingListSet = new Set(readingList.map((b) => b.book.ISBN));
 
   return (
