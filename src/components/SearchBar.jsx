@@ -3,7 +3,7 @@ import { bookStore } from "../state/bookStore";
 
 export const SearchBar = () => {
   const { setSearchBook, searchBook } = bookStore();
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState(searchBook);
 
   useEffect(() => {
     setSearchValue(searchBook);
