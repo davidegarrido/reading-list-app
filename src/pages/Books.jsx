@@ -20,10 +20,7 @@ export const Books = () => {
   return (
     <div className="flex flex-col m-10 gap gap-5">
       <Filters />
-
-      <div>
-        <BookList books={filteredBooks} readingList={readingList} />
-      </div>
+      <BookList books={filteredBooks} readingList={readingList} />
     </div>
   );
 };
